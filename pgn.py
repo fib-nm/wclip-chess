@@ -18,6 +18,8 @@ def main():
             _ = input()
         except EOFError:
             break
+        except KeyboardInterrupt:
+            break
         
         text = read_clipboard_text()
         if text:
